@@ -358,7 +358,7 @@ contactForm.addEventListener("submit", event => {
     */
 
     const receiver =
-        "yourmail@example.com";
+        "harini20060309@gmail.com";
 
 
     const mailSubject =
