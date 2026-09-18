@@ -1,152 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Harini  | Computer Science Portfolio</title>
+    <meta name="description"
+          content="Harini M - Computer Science postgraduate portfolio showcasing projects, skills, achievements, certifications and experience.">
+
+    <meta name="author" content="Harini Ranjani">
+
+    <title>HariniPortfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<!-- ================= PRELOADER ================= -->
 
-    <header>
-
-        <nav class="navbar">
-
-            <a href="#home" class="logo">
-                Harini<span>.</span>
-            </a>
-
-            <ul class="nav-links" id="navLinks">
-
-                <li>
-                    <a href="#home" class="active">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#education">Education</a>
-                </li>
-
-                <li>
-                   <a href="#internship">Internship</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#achievements">Achievements</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-            <div class="menu-icon" id="menuIcon">
-                <i class="fas fa-bars"></i>
-            </div>
-
-        </nav>
-
-    </header>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
 
 
-    <!-- ================= HOME ================= -->
+<!-- ================= NAVBAR ================= -->
 
-    <section class="home" id="home">
+<header class="header">
 
-        <div class="home-content">
+    <nav class="navbar container">
 
-            <p class="small-text">
-                Hello, I'm
+        <a href="#home" class="logo">
+            <span>Harini M </span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-actions">
+
+            <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="menuToggle" class="menu-btn" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero section">
+
+    <div class="hero-bg-circle circle-one"></div>
+    <div class="hero-bg-circle circle-two"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content reveal">
+
+            <p class="hero-small">
+                <span class="status-dot"></span>
+                Available for opportunities
             </p>
 
             <h1>
-                Harini 
+                Hi, I'm
+                <span class="gradient-text">Harini M</span>
             </h1>
 
             <h2>
-                I'm a
-                <span id="typing"></span>
+                Computer Science Postgraduate
+                <span class="typing-text"></span>
             </h2>
 
-            <p class="intro">
-
-                Computer Science graduate currently pursuing
-                M.Sc. Computer Science, with an interest in
-                Web Development, Data Analytics,Software Developer, Front-end Developer, Machine Learning
-                and UI/UX Design.
-
+            <p class="hero-description">
+                I am passionate about technology, data analytics, artificial intelligence,
+                web development and user-centered design. I enjoy transforming ideas
+                into practical and meaningful digital solutions.
             </p>
 
-            <div class="home-buttons">
+            <div class="hero-buttons">
 
-               <a href="#projects" class="btn">
-                 <i class="fas fa-folder-open"></i>
-                 View My Work
+                <a href="#projects" class="btn primary-btn">
+                    View My Work
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
-              <a
-              href="Harini_Ranjani_Resume.pdf"
-               target="_blank"
-                  class="btn btn-outline">
-
-             <i class="fas fa-file-pdf"></i>
-              My Resume
-
+                <a href="resume.pdf" class="btn secondary-btn" target="_blank">
+                    <i class="fa-solid fa-file-lines"></i>
+                    View Resume
                 </a>
-
-                 <a href="#contact" class="btn btn-outline">
-
-               <i class="fas fa-envelope"></i>
-               Contact Me
-
-              </a>
 
             </div>
 
-            <div class="social-icons">
+            <div class="social-links">
 
-                <!-- Replace # with your actual links -->
-
-                <a href="https://github.com/Harini984-web" target="_blank">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/harini984-web"
+                   target="_blank"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/harini0903/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/harini0903"
+                   target="_blank"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
-                <a href="mailto:harini20060309@gmail.com">
-                    <i class="fas fa-envelope"></i>
+                <a href="#contact" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
                 </a>
 
             </div>
@@ -154,257 +144,129 @@
         </div>
 
 
-        <div class="home-image">
+        <div class="hero-image-wrapper reveal">
 
-        <div class="image-circle">
+            <div class="image-decoration decoration-one"></div>
+            <div class="image-decoration decoration-two"></div>
 
-        <i class="fas fa-laptop-code"></i>
+            <div class="profile-card">
 
-        </div>
+                <!-- Replace profile.jpg with your actual photo -->
+                <img src="profile.jpg"
+                     alt="Harini M"
+                     class="profile-image">
 
-       </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="section" id="about">
-
-        <div class="section-title">
-
-            <p>Get To Know Me</p>
-
-            <h2>
-                About <span>Me</span>
-            </h2>
-
-        </div>
-
-
-        <div class="about-container">
-
-            <div class="about-card">
-
-                <div class="about-icon">
-
-                    <i class="fas fa-user-graduate"></i>
-
+                <div class="floating-card card-python">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
                 </div>
 
-                <h3>
-                    Computer Science Graduate
-                </h3>
-
-                <p>
-
-                    B.Sc. Computer Science graduate
-                    currently pursuing M.Sc. Computer Science.
-
-                </p>
-
-            </div>
-
-
-            <div class="about-content">
-
-                <h3>
-                    Profile Summary
-                </h3>
-
-                <p>
-
-                    I am a Computer Science graduate who completed
-                    B.Sc. Computer Science from 2023 to 2026 and
-                    am currently pursuing M.Sc. Computer Science.
-
-                </p>
-
-                <p>
-
-                    I have skills in HTML, CSS, Bootstrap, Python,
-                    Java, DBMS and Power BI. I also have experience
-                    with Canva and Figma for creating attractive
-                    and user-friendly designs.
-
-                </p>
-
-                <p>
-
-                    My areas of interest include Web Development,
-                    Data Analytics, Machine Learning and UI/UX Design.
-                    I enjoy developing practical projects and
-                    continuously learning new technologies.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= EDUCATION ================= -->
-
-    <section class="section education-section" id="education">
-
-        <div class="section-title">
-
-            <p>My Academic Journey</p>
-
-            <h2>
-                <span>Education</span>
-            </h2>
-
-        </div>
-
-
-        <div class="timeline">
-
-
-            <!-- BSC -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>
-                        2023 – 2026 | Completed
-                    </span>
-
-                    <h3>
-                        B.Sc. Computer Science
-                    </h3>
-
-                    <p>
-                        Bachelor of Science in Computer Science
-                    </p>
-
+                <div class="floating-card card-powerbi">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Power BI</span>
                 </div>
 
-            </div>
-
-
-            <!-- MSC -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>
-                        Currently Pursuing
-                    </span>
-
-                    <h3>
-                        M.Sc. Computer Science
-                    </h3>
-
-                    <p>
-                        Master of Science in Computer Science
-                    </p>
-
+                 <div class="floating-card card-java">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Data Analytics</span>
                 </div>
-
-            </div>
-
-
-            <!-- DIPLOMA -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>
-                        Completed
-                    </span>
-
-                    <h3>
-                        Diploma in Computer Application
-                    </h3>
-
-                    <p>
-                        Diploma in Computer Application (DCA)
-                    </p>
-
+                <div class="floating-card card-java">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Java</span>
                 </div>
 
             </div>
 
         </div>
-
-    </section>
-   
-
-    <!-- ================= INTERNSHIP ================= -->
-
-<section class="section" id="internship">
-
-    <div class="section-title">
-
-        <p>My Professional Experience</p>
-
-        <h2>
-            <span>Internship</span>
-        </h2>
 
     </div>
 
-    <div class="internship-container">
+    <a href="#about" class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
 
-        <div class="internship-card">
+</section>
 
-            <div class="internship-icon">
-                <i class="fas fa-briefcase"></i>
-            </div>
 
-            <div class="internship-content">
+<!-- ================= ABOUT ================= -->
 
-                <span class="internship-date">
-                    2025 | Internship
-                </span>
+<section id="about" class="section">
 
-                <h3>
-                    UI/UX 
-                </h3>
+    <div class="container">
 
-                <h4>
-                    R Sun Technology , Madurai.
-                </h4>
+        <div class="section-heading reveal">
+            <p class="section-label">ABOUT ME</p>
+            <h2>Turning curiosity into <span>technology</span></h2>
+            <p>
+                A little about my journey, interests and what I love building.
+            </p>
+        </div>
 
-                <p>
-                    Completed an internship in
-                    <strong>UI/UX (for 10 days) </strong>, where I gained
-                    practical experience and developed my
-                    technical skills through hands-on projects
-                    and real-world tasks.
 
-                    I develop a complete Front-end Website for Flower shop name is PINKORA.
-                </p>
+        <div class="about-grid">
 
-                <div class="tech">
+            <div class="about-image reveal">
 
-                    <span>Bootstrap</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Figma</span>
+                <div class="about-image-box">
+
+                    <div class="about-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div class="about-code">
+                        <span>&lt;code&gt;</span>
+                        <span>Learn</span>
+                        <span>Create</span>
+                        <span>Innovate</span>
+                        <span>&lt;/code&gt;</span>
+                    </div>
 
                 </div>
 
-                <a
-                        href="https://pinkora.onrender.com"
-                        target="_blank"
-                        class="project-link">
+            </div>
 
-                        View Project →
 
-                    </a>
+            <div class="about-content reveal">
+
+                <h3>
+                    Computer Science enthusiast with a passion for
+                    <span>building useful solutions.</span>
+                </h3>
+
+                <p>
+                    I completed my B.Sc. in Computer Science and I am currently
+                    pursuing my postgraduate studies in Computer Science.
+                    My interests include data analytics, artificial intelligence,
+                    web development, Power BI, UI/UX and software development.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and applying them through
+                    hands-on projects. My goal is to continuously improve my
+                    technical and problem-solving skills while creating projects
+                    that have practical value.
+                </p>
+
+
+                <div class="about-stats">
+
+                    <div class="stat">
+                        <strong>3+</strong>
+                        <span>Projects</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>10+</strong>
+                        <span>Certificates</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>4+</strong>
+                        <span>Tech Areas</span>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -414,504 +276,570 @@
 
 </section>
 
-    <!-- ================= SKILLS ================= -->
 
-    <section class="section" id="skills">
+<!-- ================= SKILLS ================= -->
 
-        <div class="section-title">
+<section id="skills" class="section section-alt">
 
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">MY SKILLS</p>
+            <h2>Technologies I <span>work with</span></h2>
             <p>
-                What I Know
+                A combination of development, analytics, design and database skills.
             </p>
+        </div>
 
-            <h2>
-                My <span>Skills</span>
-            </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <h3>HTML</h3>
+                <p>Semantic and responsive web structure.</p>
+                <div class="skill-bar">
+                    <span style="width: 90%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <h3>CSS</h3>
+                <p>Modern responsive interfaces and animations.</p>
+                <div class="skill-bar">
+                    <span style="width: 88%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <p>Programming, data analysis and machine learning.</p>
+                <div class="skill-bar">
+                    <span style="width: 85%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <h3>Java</h3>
+                <p>Object-oriented programming and application development.</p>
+                <div class="skill-bar">
+                    <span style="width: 80%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon powerbi-icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <h3>Power BI</h3>
+                <p>Interactive dashboards and data visualization.</p>
+                <div class="skill-bar">
+                    <span style="width: 88%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3>DBMS</h3>
+                <p>Database concepts, SQL and data management.</p>
+                <div class="skill-bar">
+                    <span style="width: 82%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <h3>Bootstrap</h3>
+                <p>Responsive layouts and UI components.</p>
+                <div class="skill-bar">
+                    <span style="width: 85%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3>UI / UX</h3>
+                <p>Design prototyping using Canva and Figma.</p>
+                <div class="skill-bar">
+                    <span style="width: 82%"></span>
+                </div>
+            </div>
 
         </div>
 
 
-        <div class="skills-container">
+        <div class="soft-skills reveal">
 
+            <h3>Soft Skills</h3>
 
-            <!-- HTML -->
+            <div class="tag-container">
 
-            <div class="skill-card">
-
-                <i class="fab fa-html5"></i>
-
-                <h3>
-                    HTML
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 85%;"></div>
-
-                </div>
+                <span>Problem Solving</span>
+                <span>Communication</span>
+                <span>Teamwork</span>
+                <span>Creativity</span>
+                <span>Time Management</span>
+                <span>Adaptability</span>
+                <span>Continuous Learning</span>
 
             </div>
-
-
-            <!-- CSS -->
-
-            <div class="skill-card">
-
-                <i class="fab fa-css3-alt"></i>
-
-                <h3>
-                    CSS
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 80%;"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PYTHON -->
-
-            <div class="skill-card">
-
-                <i class="fab fa-python"></i>
-
-                <h3>
-                    Python
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 75%;"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- JAVA -->
-
-            <div class="skill-card">
-
-                <i class="fab fa-java"></i>
-
-                <h3>
-                    Java
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 65%;"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- BOOTSTRAP -->
-
-            <div class="skill-card">
-
-                <i class="fab fa-bootstrap"></i>
-
-                <h3>
-                    Bootstrap
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 80%;"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- DBMS -->
-
-            <div class="skill-card">
-
-                <i class="fas fa-database"></i>
-
-                <h3>
-                    DBMS
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 70%;"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- POWER BI -->
-
-            <div class="skill-card">
-
-                <i class="fas fa-chart-column"></i>
-
-                <h3>
-                    Power BI
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 70%;"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- CANVA -->
-
-            <div class="skill-card">
-
-                <i class="fas fa-palette"></i>
-
-                <h3>
-                    Canva
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 85%;"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- FIGMA -->
-
-            <div class="skill-card">
-
-                <i class="fab fa-figma"></i>
-
-                <h3>
-                    Figma
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 75%;"></div>
-
-                </div>
-
-            </div>
-            
-            <div class="skill-card">
-
-                <i class="fab fa-c"></i>
-
-                <h3>
-                    C
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 75%;"></div>
-
-                </div>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-Cplus"></i>
-
-                <h3>
-                    C++
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 75%;"></div>
-
-                </div>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-.NET"></i>
-
-                <h3>
-                    .NET Programming
-                </h3>
-
-                <p>
-                    Intermediate
-                </p>
-
-                <div class="skill-bar">
-
-                    <div style="width: 75%;"></div>
-
-                </div>
-
-            </div>
-            
-
-
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= PROJECTS ================= -->
+<!-- ================= PROJECTS ================= -->
 
-    <section class="section" id="projects">
+<section id="projects" class="section">
 
-        <div class="section-title">
+    <div class="container">
 
+        <div class="section-heading reveal">
+            <p class="section-label">MY PROJECTS</p>
+            <h2>Things I've <span>built</span></h2>
             <p>
-                What I Have Built
+                Practical projects that demonstrate my technical and creative skills.
             </p>
-
-            <h2>
-                My <span>Projects</span>
-            </h2>
-
         </div>
 
 
-        <div class="projects-container">
+        <div class="projects-grid">
 
 
-            <!-- HOUSE PRICE -->
+            <!-- Project 1 -->
 
-            <div class="project-card">
+            <article class="project-card featured-project reveal">
+
+                <div class="project-number">01</div>
 
                 <div class="project-icon">
-
-                    <i class="fas fa-house"></i>
-
+                    <i class="fa-solid fa-house"></i>
                 </div>
 
                 <div class="project-content">
 
-                    <h3>
-                        House Price Prediction
-                    </h3>
+                    <span class="project-category">Machine Learning</span>
+
+                    <h3>House Price Prediction using ML with Python</h3>
 
                     <p>
-
-                        Developed a machine learning-based
-                        House Price Prediction system using Python.
-                        The system predicts property prices based
-                        on features such as location, BHK,
-                        property type and square footage.
-
+                        A machine learning project that predicts house prices
+                        using property-related features. The project includes
+                        data preprocessing, model comparison and a web-based
+                        prediction interface.
                     </p>
 
-                    <div class="tech">
-
+                    <div class="tech-tags">
                         <span>Python</span>
                         <span>Machine Learning</span>
-                        <span>Pandas</span>
                         <span>Flask</span>
+                        <span>XGBoost</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://house-price-prediction-using-ml-with.onrender.com"
+                           target="_blank">
+                            Live Demo
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="https://harini984-web.github.io/House-Price-Prediction-using-ML-with-Python/"
+                           target="_blank">
+                            Project Page
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
 
                     </div>
 
-                    <a
-                        href="https://house-price-prediction-using-ml-with.onrender.com"
-                        target="_blank"
-                        class="project-link">
-
-                        View Project →
-
-                    </a>
-
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- MEHNDI -->
+            <!-- Project 2 -->
 
-            <div class="project-card">
+            <article class="project-card reveal">
+
+                <div class="project-number">02</div>
 
                 <div class="project-icon">
-
-                    <i class="fas fa-hand-sparkles"></i>
-
+                    <i class="fa-solid fa-hands"></i>
                 </div>
 
                 <div class="project-content">
 
-                    <h3>
-                        Mehndi Design Website
-                    </h3>
+                    <span class="project-category">Web Development</span>
+
+                    <h3>Mehndi Design Website</h3>
 
                     <p>
-
-                        Designed and developed a responsive
-                        Mehndi Design website to showcase
-                        creative Mehndi designs using
-                        HTML, CSS and JavaScript.
-
+                        A responsive website showcasing different mehndi
+                        designs with a simple and visually focused user interface.
                     </p>
 
-                    <div class="tech">
-
+                    <div class="tech-tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://siva09-mendi.github.io/mehndi-design-photos.com/"
+                           target="_blank">
+                            Live Website
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
 
                     </div>
 
-                    <a
-                        href="https://siva09-mendi.github.io/mehndi-design-photos.com/"
-                        target="_blank"
-                        class="project-link">
-
-                        View Project →
-
-                    </a>
-
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- WASTE -->
+            <!-- Project 3 -->
 
-            <div class="project-card">
+            <article class="project-card reveal">
+
+                <div class="project-number">03</div>
 
                 <div class="project-icon">
-
-                    <i class="fas fa-recycle"></i>
-
+                    <i class="fa-solid fa-house-chimney"></i>
                 </div>
 
                 <div class="project-content">
 
-                    <h3>
-                        Home Decoration from Waste
-                    </h3>
+                    <span class="project-category">Web Project</span>
+
+                    <h3>Home Decoration Waste</h3>
 
                     <p>
-
-                        Created a website using Google Sites
-                        to showcase creative and eco-friendly
-                        home decoration ideas using waste
-                        materials.
-
+                        An awareness-oriented web project focused on home
+                        decoration waste and responsible reuse ideas.
                     </p>
 
-                    <div class="tech">
-
-                        <span>Google Sites</span>
+                    <div class="tech-tags">
                         <span>Web Design</span>
+                        <span>HTML</span>
+                        <span>Google Sites</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://sites.google.com/view/home-decoration-waste"
+                           target="_blank">
+                            Visit Project
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
 
                     </div>
 
-                    <a
-                        href="https://sites.google.com/view/home-decoration-waste"
-                        target="_blank"
-                        class="project-link">
-
-                        View Project →
-
-                    </a>
-
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- PINKORA -->
+            <!-- Project 4 -->
 
-            <div class="project-card">
+            <article class="project-card reveal">
+
+                <div class="project-number">04</div>
 
                 <div class="project-icon">
-
-                    <i class="fas fa-seedling"></i>
-
+                    <i class="fa-solid fa-seedling"></i>
                 </div>
 
                 <div class="project-content">
 
-                    <h3>
-                        Pinkora – Flower Shop
-                    </h3>
+                    <span class="project-category">UI / UX</span>
+
+                    <h3>Pinkora Flower Shop</h3>
 
                     <p>
-
-                        Designed and developed a responsive
-                        front-end flower shop website while
-                        applying UX/UI design principles using
-                        HTML, CSS and Bootstrap.
-
+                        A flower shop interface designed as a UI/UX learning
+                        project with responsive layouts and modern visual styling.
                     </p>
 
-                    <div class="tech">
-
+                    <div class="tech-tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>Bootstrap</span>
                         <span>UI/UX</span>
-
                     </div>
-                    <a
-                        href="https://pinkora.onrender.com"
-                        target="_blank"
-                        class="project-link">
 
-                        View Project →
+                </div>
 
-                    </a>
+            </article>
 
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="section section-alt">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">EDUCATION</p>
+            <h2>My academic <span>journey</span></h2>
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Currently Pursuing
+                    </span>
+
+                    <h3>M.Sc. Computer Science</h3>
+
+                    <p>
+                        Postgraduate studies in Computer Science with a focus
+                        on developing advanced technical and analytical skills.
+                    </p>
+
+                    <span class="timeline-status">
+                        <i class="fa-solid fa-circle"></i>
+                        In Progress
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2023 – 2026
+                    </span>
+
+                    <h3>B.Sc. Computer Science</h3>
+                    <p> CGPA : 8.464</p>
+                    <p>
+                        Undergraduate study covering programming, databases,
+                        web development, computer applications and related
+                        computer science subjects.
+                    </p>
+
+                    <span class="timeline-status completed">
+                        <i class="fa-solid fa-check"></i>
+                        Completed
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Completed
+                    </span>
+
+                    <h3>Diploma in Computer Application</h3>
+
+                    <p>
+                        Foundation in computer applications, digital tools
+                        and basic programming concepts.
+                    </p>
+
+                    <span class="timeline-status completed">
+                        <i class="fa-solid fa-check"></i>
+                        Completed
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATES ================= -->
+
+<section id="certificates" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">CERTIFICATIONS & WORKSHOPS</p>
+            <h2>Learning beyond the <span>classroom</span></h2>
+        </div>
+
+
+        <div class="certificates-grid">
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">Sept 2025</span>
+                    <h3>Hands-on Python: Learn by Doing</h3>
+                    <p>Online SDP · Reccsar Pvt. Ltd.</p>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">July 2026</span>
+                    <h3>AI-Powered IoT</h3>
+                    <p>Transforming the Connected World · Reccsar Pvt. Ltd.</p>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">July 2025</span>
+                    <h3>Top UI/UX Tools Every Designer Must Know</h3>
+                    <p>GUVI</p>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">May 2026</span>
+                    <h3>Data Driven Design Decisions</h3>
+                    <p>UI/UX using AI · GUVI</p>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">Nov 2025</span>
+                    <h3>Tata Crucible Campus Quiz</h3>
+                    <p>Prelims Level 1 · Internshala</p>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">Jan 2025</span>
+                    <h3>Build Your Own Generative AI Model</h3>
+                    <p>NextWave</p>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">Workshop</span>
+                    <h3>Internet of Things</h3>
+                    <p>NSCAS · 3 Days</p>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <div>
+                    <span class="certificate-date">Workshop</span>
+                    <h3>Data Analytics with Python</h3>
+                    <p>NSCAS · 3 Days</p>
                 </div>
 
             </div>
@@ -919,283 +847,125 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= ACHIEVEMENTS ================= -->
+<!-- ================= ACHIEVEMENTS ================= -->
 
-    <section class="section" id="achievements">
+<section id="achievements" class="section section-alt">
 
-        <div class="section-title">
+    <div class="container">
 
+        <div class="section-heading reveal">
+            <p class="section-label">ACHIEVEMENTS</p>
+            <h2>Milestones I'm <span>proud of</span></h2>
+        </div>
+
+
+        <div class="achievement-grid">
+
+
+            <div class="achievement-card reveal">
+
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+
+                <div>
+                    <h3>Best Paper Award</h3>
+                    <p>
+                        Published a paper on Human-Computer Interaction
+                        at the International Conference on Computational
+                        Intelligence and Application in Physics.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="achievement-card reveal">
+
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div>
+                    <h3>E-Commerce Website Development Competition</h3>
+                    <p>
+                        Participated and received a winning certificate
+                        in an e-commerce website development competition 2025.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="achievement-card reveal">
+
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <div>
+                    <h3>TCS NQT IT</h3>
+                    <p>
+                        Progressed to the second round of the TCS NQT IT
+                        recruitment process.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">CONTACT</p>
+            <h2>Let's create something <span>meaningful</span></h2>
             <p>
-                My Highlights
+                Have an opportunity, project idea or simply want to connect?
+                Feel free to reach out.
             </p>
-
-            <h2>
-                Achievements & <span>Publications</span>
-            </h2>
-
         </div>
 
 
-        <div class="achievement-container">
+        <div class="contact-grid">
 
 
-            <!-- BEST PAPER -->
+            <div class="contact-info reveal">
 
-            <div class="achievement-card">
-
-                <div class="achievement-icon">
-
-                    <i class="fas fa-award"></i>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Best Paper Award – 2024
-                    </h3>
-
-                    <p>
-
-                        Published a research paper titled
-                        <strong>
-                            “Human–Computer Interaction”
-                        </strong>
-                        at the International Conference on
-                        "Computational Intelligence and
-                        Application in Physics" and received
-                        the Best Paper Award.
-
-                    </p>
-
-                </div>
-
-            </div>
-            
-            <div class="achievement-card">
-
-                <div class="achievement-icon">
-
-                    <i class="fas fa-award"></i>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Paper Published – 2025
-                    </h3>
-
-                    <p>
-
-                        Published a research paper titled
-                        <strong>
-                            “Ai-Assisted Ux Evaluation For Intelligent Interface Improvement”
-                        </strong>
-                        at the International Conference on
-                         “Quantum – Driven Computational Intelligence 2K25” and recieved Certificate.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ECOMMERCE -->
-
-            <div class="achievement-card">
-
-                <div class="achievement-icon">
-
-                    <i class="fas fa-trophy"></i>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        E-Commerce Website Development Competition
-                    </h3>
-
-                    <p>
-
-                        Participated in an E-Commerce Website
-                        Development Competition and received
-                        a Certificate of Achievement.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- WORKSHOPS -->
-
-            <div class="achievement-card">
-
-                <div class="achievement-icon">
-
-                    <i class="fas fa-certificate"></i>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Workshops & Training
-                    </h3>
-
-                    <p>
-
-                        Participated in workshops on
-                        Internet of Things (IoT),
-                        Data Analytics with Python and
-                        Build Your Own Generative AI Model.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= TCS NQT ================= -->
-
-    <section class="nqt-section">
-
-        <div class="nqt-content">
-
-
-            <div>
-
-                <p class="small-text">
-                    TCS iON NQT – IT
-                </p>
-
-                <h2>
-                    Overall Score:
-                    <span>64.97%</span>
-                </h2>
+                <h3>Get in touch</h3>
 
                 <p>
-
-                    Successfully completed TCS iON NQT – IT
-                    assessment.
-
-                </p>
-
-            </div>
-
-
-            <div class="nqt-score">
-
-
-                <div>
-
-                    <strong>
-                        64.46%
-                    </strong>
-
-                    <small>
-                        Foundation
-                    </small>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        74.03%
-                    </strong>
-
-                    <small>
-                        Advanced
-                    </small>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        57.44%
-                    </strong>
-
-                    <small>
-                        Python
-                    </small>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section class="section" id="contact">
-
-        <div class="section-title">
-
-            <p>
-                Let's Connect
-            </p>
-
-            <h2>
-                Contact <span>Me</span>
-            </h2>
-
-        </div>
-
-
-        <div class="contact-container">
-
-
-            <div class="contact-info">
-
-                <h3>
-                    Let's work together!
-                </h3>
-
-                <p>
-
-                    I am interested in learning new technologies,
-                    developing innovative projects and exploring
-                    opportunities in the software industry.
-
+                    I'm open to learning opportunities, internships,
+                    projects and professional connections.
                 </p>
 
 
                 <div class="contact-item">
 
-                    <i class="fas fa-envelope"></i>
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
 
                     <div>
-
-                        <span>
-                            Email
-                        </span>
-
-                        <p>
+                        <span>Email</span>
+                        <a href="mailto:yourmail@example.com">
                             harini20060309@gmail.com
-                        </p>
-
+                        </a>
                     </div>
 
                 </div>
@@ -1203,92 +973,177 @@
 
                 <div class="contact-item">
 
-                    <i class="fas fa-location-dot"></i>
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
 
                     <div>
-
-                        <span>
-                            Location
-                        </span>
-
-                        <p>
-                            Sankarapuram, Theni district, Tamil Nadu , India.
-                        </p>
-
+                        <span>GitHub</span>
+                        <a href="https://github.com/harini984-web"
+                           target="_blank">
+                            github.com/harini984-web
+                        </a>
                     </div>
 
                 </div>
 
 
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                    <div>
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/harini0903"
+                           target="_blank">
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
 
 
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form reveal"
+                  id="contactForm">
 
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    required>
+                <div class="form-group">
 
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    required>
+                    <label for="name">Your Name</label>
 
-                <input
-                    type="text"
-                    placeholder="Subject"
-                    required>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name"
+                           required>
 
-                <textarea
-                    rows="6"
-                    placeholder="Your Message"
-                    required>
-                </textarea>
+                </div>
 
-                <button
-                    type="submit"
-                    class="btn">
+
+                <div class="form-group">
+
+                    <label for="email">Your Email</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">Subject</label>
+
+                    <input type="text"
+                           id="subject"
+                           name="subject"
+                           placeholder="Enter subject"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Message</label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              placeholder="Write your message..."
+                              required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn primary-btn submit-btn">
 
                     Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
 
                 </button>
 
-            </form>
+                <p id="formMessage" class="form-message"></p>
 
+            </form>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
+
+</main>
 
 
-    <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 
-    <footer>
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <span>Harini M </span>
+            </a>
+
+            <p>
+                Building. Learning. Creating.
+            </p>
+
+        </div>
+
+
+        <div class="footer-socials">
+
+            <a href="https://github.com/harini984-web"
+               target="_blank"
+               aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/harini0903"
+               target="_blank"
+               aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
 
         <p>
-
-            © 2026
-            <strong>
-                Harini
-            </strong>
-            . All Rights Reserved.
-
+            © <span id="currentYear"></span> Harini M.
+            All rights reserved.
         </p>
 
-        <a href="#home">
+    </div>
 
-            <i class="fas fa-arrow-up"></i>
-
-        </a>
-
-    </footer>
+</footer>
 
 
-    <!-- JavaScript -->
+<!-- ================= BACK TO TOP ================= -->
 
-    <script src="script.js"></script>
+<button id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
